@@ -1,0 +1,11 @@
+[Unit]
+Description= timer for test
+After=network.target
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+Unit=tm.service
+
+[Install]
+WantedBy=timers.target
